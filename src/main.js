@@ -5,10 +5,11 @@ import App from './App'
 import router from './router'
 import api from './axios'
 import store from './store'
+import ElementUI from 'element-ui'
 
 Vue.config.productionTip = false;
 Vue.prototype.$api = api;
-
+Vue.use(ElementUI)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
