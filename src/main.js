@@ -2,15 +2,17 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
+//路由
 import router from './router'
-import api from './axios'
+//仓库
 import store from './store'
+//element-ui
 import ElementUI from 'element-ui'
-
 Vue.config.productionTip = false;
-Vue.prototype.$api = api;
 Vue.use(ElementUI)
+
 /* eslint-disable no-new */
+
 new Vue({
   el: '#app',
   store,
