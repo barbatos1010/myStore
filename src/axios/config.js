@@ -13,11 +13,10 @@ instance.interceptors.request.use(function(config) {
     return Promise.reject(error);
   })
 // 响应拦截器
-instance.interceptors.response.use(function(response) {
-  return response;
-}, function(error) {
-  return Promise.reject(error);
-})
+instance.interceptors.response.use(
+   response=>{ return response }, 
+   error => { return Promise.reject(error) }
+   )
 
 /*
  * 使用export default 导出一个自己封装的axios
